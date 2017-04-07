@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Sign-in Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- https://dribbble.com/shots/2372029-Sign-in-form -->
+    <style>
+        .inspiration {
+            padding: 3px;
+            font-size: 12px;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <section class="body">
+                <header>
+                    <img class="profilePhoto" src="profile.png" alt="Profile image">
+                    <h1>Welcome back!</h1>
+                    <p>Sign in to your account.</p>
+                </header>
+                <form action="#">
+                    <label for="email" class="sr">Email</label>
+                    <input id="email" type="email" placeholder="address@email.com" required/>
+                    <label for="password" class="sr">Password</label>
+                    <input id="password" type="password" placeholder="password" required/>
+                    <div class="form-footer">
+                        <input id="remember" type="checkbox" />
+                        <label for="remember">Remember me</label>
+                        <button type="submit">Sign in</button>
+                    </div>
+                </form>
+            </section>
+            <footer>
+                <p>Connect with
+                <a class="socialLink" href="#facebook">
+                    <span class="sr">Facebook</span>
+                    <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                        />
+                    </svg>
+                </a>
+                <a class="socialLink" href="#twitter">
+                    <span class="sr">Twitter</span>
+                    <svg id="twitter" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"
+                        />
+                    </svg>
+                </a>
+                </p>
+            </footer>
+        </div>
+    </main>
+    <footer class="inspiration"><small>Inspired by <a href="https://dribbble.com/shots/2372029-Sign-in-form">Iguana Studio's Sign-in Form</a> on <a href="https://dribbble.com/">dribbble.com</a>.</small></footer>
+</body>
+<!-- THOUGHTS: 
+    - Background is tricky due to the slight drop shadow
+    - Font colors are inaccessibly for low vision users
+    - HTML5 validation for now, js would be required
+-->
+</html>
