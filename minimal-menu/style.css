@@ -93,6 +93,12 @@ nav {
     transform: translateY(0);
 }
 
+/* TODO:
+- Clean up card style
+- Add reduced motion media styles
+- Refactor/prettify
+*/
+
 /* Page styles */
 .credit {
     position: absolute;
