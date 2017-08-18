@@ -20,6 +20,7 @@ nav a {
     flex: 1;
     height: 0;
     overflow: hidden;
+    text-decoration: none;
     transition: var(--timing) all;
 }
 nav a:nth-child(1) {
@@ -73,10 +74,20 @@ nav a .content:after {
 }
 nav a .content img {
     float: left;
-    margin-right: 8px;
+    margin-right: 5%;
+    width: 45%;
 }
-nav a .content h5 {
-    margin: 0;
+nav a .content small {
+    display: block; 
+}
+nav a .content h4 {
+    font-size: 18px;
+    font-family: serif;
+    letter-spacing: 2px;
+}
+nav a .content h4,
+nav a .content small {
+    margin: 5%;
 }
 nav a:hover,
 nav a:focus {
@@ -92,7 +103,6 @@ nav a:focus .content{
 }
 
 /* TODO:
-- Clean up card style
 - Add reduced motion media styles
 */
 
