@@ -15,81 +15,77 @@ body {
 nav {
     display: flex;
 }
-.nav-item {
+nav a {
     color: #fff;
     flex: 1;
     height: 0;
     overflow: hidden;
     transition: var(--timing) all;
 }
-.nav-item:nth-child(1) {
+nav a:nth-child(1) {
     border-top: var(--border-top) solid var(--accent-1);
 }
-.nav-item:nth-child(1) .nav-item-card { 
+nav a:nth-child(1) .content { 
     background: var(--accent-1);    
 }
-.nav-item:nth-child(2) {
+nav a:nth-child(2) {
     border-top: var(--border-top) solid var(--accent-2);
 }
-.nav-item:nth-child(2) .nav-item-card { 
+nav a:nth-child(2) .content { 
     background: var(--accent-2);    
 }
-.nav-item:nth-child(3) {
+nav a:nth-child(3) {
     border-top: var(--border-top) solid var(--accent-3);
 }
-.nav-item:nth-child(3) .nav-item-card { 
+nav a:nth-child(3) .content { 
     background: var(--accent-3);    
 }
-.nav-item:nth-child(4) {
+nav a:nth-child(4) {
     border-top: var(--border-top) solid var(--accent-4);
 }
-.nav-item:nth-child(4) .nav-item-card { 
+nav a:nth-child(4) .content { 
     background: var(--accent-4);    
 }
-.nav-item:nth-child(5) {
+nav a:nth-child(5) {
     border-top: var(--border-top) solid var(--accent-5);
 }
-.nav-item:nth-child(5) .nav-item-card { 
+nav a:nth-child(5) .content { 
     background: var(--accent-5);    
 }
-.nav-item:nth-child(6) {
+nav a:nth-child(6) {
     border-top: var(--border-top) solid var(--accent-6);
 }
-.nav-item:nth-child(6) .nav-item-card { 
+nav a:nth-child(6) .content { 
     background: var(--accent-6);    
 }
-.nav-item-card {
+nav a .content {
     opacity: 0;
     transition: var(--timing) all calc(var(--timing) / 2);
     transform: translateY(-100%);
 }
-.nav-item-card:before,
-.nav-item-card:after {
+nav a .content:before,
+nav a .content:after {
   content: "";
   display: table;
 }
-.nav-item-card:after {
+nav a .content:after {
   clear: both;
 }
-.nav-item-card img {
+nav a .content img {
     float: left;
     margin-right: 8px;
 }
-.nav-item-card h5 {
+nav a .content h5 {
     margin: 0;
 }
-.nav-item-card a {
-    color: inherit;
-    text-decoration: none;
-}
-.nav-item:hover,
-.nav-item:focus {
+nav a:hover,
+nav a:focus {
     border-top-width: 0;
     flex: 2;
     height: auto;
 }
-.nav-item:hover .nav-item-card,
-.nav-item:focus .nav-item-card{
+nav a:hover .content,
+nav a:focus .content{
     height: auto;
     opacity: 1;
     transform: translateY(0);
@@ -98,7 +94,6 @@ nav {
 /* TODO:
 - Clean up card style
 - Add reduced motion media styles
-- Refactor/prettify
 */
 
 /* Page styles */
