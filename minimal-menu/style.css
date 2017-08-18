@@ -102,9 +102,15 @@ nav a:focus .content{
     transform: translateY(0);
 }
 
-/* TODO:
-- Add reduced motion media styles
-*/
+@media (prefers-reduced-motion: reduce) {
+    nav a{
+        border-top-width: 0 !important;
+    }
+    nav a .content{
+        height: auto !important;
+        opacity: 1 !important;
+    }
+}
 
 /* Page styles */
 .credit {
