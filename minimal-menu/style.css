@@ -6,9 +6,11 @@
     --accent-5: #F3A653;
     --accent-6: #335F69;
     --timing: .25s;
+    --border-top: 5px;
 }
 body {
     background: #000;
+    font-family: sans-serif;
 }
 nav {
     display: flex;
@@ -21,37 +23,37 @@ nav {
     transition: var(--timing) all;
 }
 .nav-item:nth-child(1) {
-    border-top: 4px solid var(--accent-1);
+    border-top: var(--border-top) solid var(--accent-1);
 }
 .nav-item:nth-child(1) .nav-item-card { 
     background: var(--accent-1);    
 }
 .nav-item:nth-child(2) {
-    border-top: 4px solid var(--accent-2);
+    border-top: var(--border-top) solid var(--accent-2);
 }
 .nav-item:nth-child(2) .nav-item-card { 
     background: var(--accent-2);    
 }
 .nav-item:nth-child(3) {
-    border-top: 4px solid var(--accent-3);
+    border-top: var(--border-top) solid var(--accent-3);
 }
 .nav-item:nth-child(3) .nav-item-card { 
     background: var(--accent-3);    
 }
 .nav-item:nth-child(4) {
-    border-top: 4px solid var(--accent-4);
+    border-top: var(--border-top) solid var(--accent-4);
 }
 .nav-item:nth-child(4) .nav-item-card { 
     background: var(--accent-4);    
 }
 .nav-item:nth-child(5) {
-    border-top: 4px solid var(--accent-5);
+    border-top: var(--border-top) solid var(--accent-5);
 }
 .nav-item:nth-child(5) .nav-item-card { 
     background: var(--accent-5);    
 }
 .nav-item:nth-child(6) {
-    border-top: 4px solid var(--accent-6);
+    border-top: var(--border-top) solid var(--accent-6);
 }
 .nav-item:nth-child(6) .nav-item-card { 
     background: var(--accent-6);    
